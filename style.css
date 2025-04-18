@@ -43,6 +43,13 @@
   color: black;
 }
 
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  flex-wrap: wrap; /* untuk desktop kalau melebihi container */
+}
+
 .rotated-box-active {
   width: 140px;
   height: 140px;
