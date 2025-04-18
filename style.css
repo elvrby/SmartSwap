@@ -50,44 +50,6 @@
   flex-wrap: wrap; /* untuk desktop kalau melebihi container */
 }
 
-.rotated-box-active {
-  width: 140px;
-  height: 140px;
-  background: linear-gradient(135deg, #3b82f6, #93c5fd); /* biru gradasi */
-  border-radius: 20px;
-  transform: rotate(45deg);
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-  align-items: center;
-}
-.rotated-box {
-  width: 140px;
-  height: 140px;
-  border: 1px solid rgba(162, 162, 162, 1);
-  border-radius: 20px;
-  transform: rotate(45deg);
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-  align-items: center;
-}
-.hover-rotated-box:hover {
-  background: linear-gradient(135deg, #3b82f6, #93c5fd); /* biru gradasi */
-  border: 0px;
-}
-
-.rotated-BTC-Image {
-  transform: rotate(-43deg);
-  width: 80px; /* atau sesuaikan ukuran sesuai desain */
-  height: 80px;
-}
-.rotated-Image {
-  transform: rotate(-45deg);
-  width: 80px; /* atau sesuaikan ukuran sesuai desain */
-  height: 80px;
-}
-
 /* Content 3 */
 .step-card {
   background-color: white;
