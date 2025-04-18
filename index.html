@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartSwap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 border-bottom" style="z-index: 10">
+      <div class="container">
+        <a class="navbar-brand" href="#">SmartSwap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-4">
+              <a class="nav-link active" aria-current="page" href="#">Exchange</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#">Affiliate Program</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-item" aria-disabled="true">
+                <button type="button" class="btn btn-primary">Sign Up/Login</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <!-- Background -->
+    <div class="blue-glow-circle min-vh-100"></div>
+    <!-- Content 1 -->
+    <div class="container py-5" style="max-width: 480px">
+      <div class="card rounded-4">
+        <div class="card-body">
+          <!-- Content 1 Step Counter -->
+          <div class="d-flex justify-content-between align-items-center mb-3 mt-4">
+            <h6 class="card-title mb-0">Select Pair <small class="text-primary">1/4</small></h6>
+          </div>
+          <!-- Carousel Indicators -->
+          <div class="step-indicators mb-4">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+
+          <div class="">
+            <!-- You Send -->
+            <div class="card mb-2 Pair-Box text-white">
+              <div class="container text-dark pt-2">
+                <small class="fw-normal px-2">You Send</small>
+              </div>
+              <div class="d-flex px-4 py-2 justify-content-between align-items-center">
+                <div class="dropdown w-100 d-flex align-items-center">
+                  <div class="rounded-circle bg-secondary me-2" style="width: 36px; height: 32px"></div>
+                  <button
+                    id="tokenDropdownBtnSend"
+                    class="border-0 Pair-Box text-start w-100 d-flex flex-column align-items-start"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.75rem"
+                  >
+                    <span class="fw-bold d-flex align-items-center">
+                      <span class="token-text">BTC</span>
+                      <div class="dropdown-toggle ms-2"></div>
+                    </span>
+                    <small class="text-muted token-sub">Bitcoin</small>
+                  </button>
+                  <ul class="dropdown-menu w-100" aria-labelledby="tokenDropdownBtnSend">
+                    <li>
+                      <a class="dropdown-item d-flex flex-column" href="#" data-value="BTC">
+                        <span class="fw-bold">BTC</span>
+                        <small class="text-muted">Bitcoin</small>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex flex-column" href="#" data-value="USDT">
+                        <span class="fw-bold">USDT</span>
+                        <small class="text-muted">Ethereum</small>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="text-end text-dark">
+                  <div class="h5 text-start mb-0">0.1</div>
+                  <small>$8,241.65</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="position-absolute start-50 translate-middle bg-white border border-secondary rounded-circle" style="top: 44%; width: 30px; height: 30px; z-index: 1"></div>
+
+            <!-- You get -->
+            <div class="card mb-4 Pair-Box text-white">
+              <div class="container text-dark pt-2">
+                <small class="fw-normal px-2">You Get</small>
+              </div>
+              <div class="d-flex px-4 py-2 justify-content-between align-items-center">
+                <div class="dropdown w-100 d-flex align-items-center">
+                  <div class="rounded-circle bg-secondary me-2" style="width: 36px; height: 32px"></div>
+                  <button
+                    id="tokenDropdownBtn"
+                    class="border-0 Pair-Box text-start w-100 d-flex flex-column align-items-start"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 0.75rem"
+                  >
+                    <span class="fw-bold d-flex align-items-center">
+                      <span class="token-text">USDT</span>
+                      <div class="dropdown-toggle ms-2"></div>
+                    </span>
+                    <small class="text-muted token-sub">Ethereum</small>
+                  </button>
+                  <ul class="dropdown-menu w-100" aria-labelledby="tokenDropdownBtn">
+                    <li>
+                      <a class="dropdown-item d-flex flex-column" href="#" data-value="USDT">
+                        <span class="fw-bold">USDT</span>
+                        <small class="text-muted">Ethereum</small>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item d-flex flex-column" href="#" data-value="USDC">
+                        <span class="fw-bold">USDC</span>
+                        <small class="text-muted">USD Coin</small>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="text-end text-dark">
+                  <div class="h5 text-start mb-0">0.1</div>
+                  <small>$8,241.65</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Exchange rate -->
+            <div class="p-4 Pair-Box py-3 mb-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted mb-0">Exchange rate</small>
+                <div class="text-end">1 BTC ≈ 87,582.61 USDT</div>
+              </div>
+            </div>
+
+            <!-- Button Next -->
+            <button class="btn btn-primary w-100 py-2">Next Step</button>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center mt-4">
+        <h4 class="fw-bold">Swap crypto across blockchains</h4>
+        <p>Exchange Bitcoin, Ethereum and various other chains in a simple, secure and private way</p>
+      </div>
+    </div>
+
+    <!-- Content 2 -->
+    <div class="container">
+      <!-- Content 2 Image -->
+      <div class="container">
+        <img src="public/image 14.png" alt="cointelegraph" />
+        <img src="public/image 15.png" alt="" />
+      </div>
+      <!-- Content 2 Title -->
+      <div class="text-center mt-5">
+        <h3 class="fw-bold">The Edge You’ve Been Looking For</h3>
+      </div>
+      <!-- Content 2 Information Boxes-->
+      <div class="d-block d-md-flex justify-content-between gap-4">
+        <div class="w-100 w-md-50 px-4 mb-4 mb-md-0" style="background-color: rgba(226, 226, 226, 0.14); padding-top: 2rem; padding-bottom: 4rem">
+          <div class="rounded-circle bg-secondary mb-2" style="width: 36px; height: 36px"></div>
+          <h4>Fast Exchanges</h4>
+          <p>Swiftly swap crypto across blockchains, ensuring you catch every market move with ease and efficiency.</p>
+        </div>
+        <div class="w-100 w-md-50 px-4 mb-4 mb-md-0" style="background-color: rgba(226, 226, 226, 0.14); padding-top: 2rem; padding-bottom: 4rem">
+          <div class="rounded-circle bg-secondary mb-2" style="width: 36px; height: 36px"></div>
+          <h4>Transparent Fees</h4>
+          <p>Clear, upfront pricing with no hidden costs, so you always know exactly what you’re paying for every trade.</p>
+        </div>
+        <div class="w-100 w-md-50 px-4 mb-4 mb-md-0" style="background-color: rgba(226, 226, 226, 0.14); padding-top: 2rem; padding-bottom: 4rem">
+          <div class="rounded-circle bg-secondary mb-2" style="width: 36px; height: 36px"></div>
+          <h4>High Liquidity</h4>
+          <p>Trade large crypto volumes effortlessly, with deep pools ensuring smooth exchanges without any issues.</p>
+        </div>
+        <div class="w-100 w-md-50 px-4 mb-4 mb-md-0" style="background-color: rgba(226, 226, 226, 0.14); padding-top: 2rem; padding-bottom: 4rem">
+          <div class="rounded-circle bg-secondary mb-2" style="width: 36px; height: 36px"></div>
+          <h4>Private & Secure</h4>
+          <p>Your trades are deleted upon completion, never stored, with top-tier encryption for ultimate confidentiality.</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
