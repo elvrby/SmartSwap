@@ -89,6 +89,74 @@
   height: 80px;
 }
 
+/* Content 3 */
+.step-card {
+  background-color: white;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.step-card.active-step {
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  color: white;
+  border: none;
+}
+
+.step-card .step-toggle {
+  cursor: pointer;
+  border: none;
+}
+
+.step-card .step-number {
+  transition: color 0.3s ease;
+}
+
+.step-card.active-step .step-number {
+  color: white;
+  border: none;
+}
+.step-badge {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step-card.active-step .step-badge {
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  color: white;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  font-size: 1.25rem;
+}
+
+.content-3-swap {
+  width: 40rem;
+}
+
+.Content-3-End-Box {
+  padding-top: 1rem;
+  padding-bottom: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.content-4-start {
+  width: 50rem;
+}
+.content-4-imgBox {
+  width: 70%;
+  margin-top: 3rem;
+}
+
 @media screen and (max-width: 768px) {
   .icon-wrapper {
     display: grid;
@@ -101,6 +169,22 @@
     margin-top: 3rem;
   }
   .rotated-box {
+    margin-top: 3rem;
+  }
+
+  .content-3-swap {
+    width: 100%;
+  }
+  .Content-3-End-Box {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .content-4-start {
+    width: 100%;
+  }
+  .content-4-imgBox {
+    width: 100%;
+    height: 15rem;
     margin-top: 3rem;
   }
 }
