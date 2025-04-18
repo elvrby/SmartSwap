@@ -64,7 +64,6 @@
 .rotated-box {
   width: 140px;
   height: 140px;
-  background: rgba(226, 226, 226, 0.14); /* biru gradasi */
   border: 1px solid rgba(162, 162, 162, 1);
   border-radius: 20px;
   transform: rotate(45deg);
